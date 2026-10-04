@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nash Crawford, Basketball Coach and Social Media Manager</title>
+<meta name="description" content="Nash Crawford, graduate assistant coach and social media manager for Howard Payne University men's basketball.">
+<meta property="og:title" content="Nash Crawford, Basketball Coach and Social Media Manager">
+<meta property="og:description" content="Player development, recruiting, and social media for Howard Payne University men's basketball.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0E2457">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0E2457;
+    --navy-deep: #091A42;
+    --gold: #B8975A;
+    --paper: #F5F6F8;
+    --card: #FFFFFF;
+    --ink: #13213F;
+    --muted: #5A6478;
+    --rule: #D5DAE3;
+    --on-navy: #EEF1F7;
+    --on-navy-muted: #AEB8CF;
+    --serif: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+    --sans: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #0C1426; --card: #121C33; --ink: #E8ECF4; --muted: #9AA5BD; --rule: #263352;
+      --navy: #0A1A3F; --navy-deep: #07122D; --gold: #CDAE72;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #0C1426; --card: #121C33; --ink: #E8ECF4; --muted: #9AA5BD; --rule: #263352;
+    --navy: #0A1A3F; --navy-deep: #07122D; --gold: #CDAE72;
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before { animation: none !important; transition: none !important; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+  .wrap { max-width: 72rem; margin: 0 auto; padding: 0 clamp(1.25rem, 4vw, 3rem); }
+
+  /* Hero */
+  .hero { background: var(--navy); color: var(--on-navy); position: relative; overflow: hidden; }
+  .court { position: absolute; right: -6%; top: 50%; width: min(62rem, 120vw); height: auto; transform: translateY(-50%); pointer-events: none; }
+  .court path, .court line, .court circle, .court rect { stroke: var(--gold); stroke-width: 1.2; fill: none; opacity: .38; stroke-dasharray: 2400; stroke-dashoffset: 2400; animation: draw 2.6s cubic-bezier(.6,.1,.2,1) .2s forwards; }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  header.top { position: relative; display: flex; justify-content: space-between; align-items: baseline; padding: 1.75rem 0; font-size: .95rem; }
+  header.top nav { display: flex; gap: 1.5rem; }
+  header.top nav a { text-decoration: none; color: var(--on-navy-muted); }
+  header.top nav a:hover { color: var(--on-navy); }
+  .mark { font-family: var(--serif); font-size: 1.15rem; text-decoration: none; }
+  .hero-body { position: relative; padding: clamp(3.5rem, 11vw, 8rem) 0 clamp(3.5rem, 9vw, 6.5rem); }
+  .hero h1 { font-family: var(--serif); font-weight: 400; margin: 0; font-size: clamp(3.5rem, 12.5vw, 9.75rem); line-height: .92; letter-spacing: -.02em; }
+  .hero h1 span { display: block; padding-left: clamp(1.5rem, 12vw, 10rem); font-style: italic; }
+  .role { margin: 1.75rem 0 0; font-size: clamp(1.05rem, 1.8vw, 1.25rem); color: var(--on-navy-muted); }
+  .role strong { color: var(--on-navy); font-weight: 500; }
+  .mission { margin-top: clamp(2.5rem, 6vw, 4rem); max-width: 40rem; border-left: 1px solid var(--gold); padding-left: 1.5rem; }
+  .mission p { font-family: var(--serif); font-size: clamp(1.2rem, 2.2vw, 1.5rem); line-height: 1.45; margin: 0; }
+  .actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.5rem; }
+  .btn { display: inline-block; padding: .8rem 1.5rem; text-decoration: none; font-weight: 500; border: 1px solid var(--gold); transition: background .2s, color .2s; }
+  .btn.solid { background: var(--gold); color: var(--navy-deep); }
+  .btn.solid:hover { background: transparent; color: var(--on-navy); }
+  .btn.ghost:hover { background: var(--gold); color: var(--navy-deep); }
+
+  section { padding: clamp(3.5rem, 9vw, 6.5rem) 0; }
+  h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1.1; margin: 0 0 1rem; }
+  .sub { color: var(--muted); max-width: 52ch; margin: 0 0 3rem; }
+
+  /* Testimonials */
+  .quotes { display: grid; gap: clamp(2.5rem, 5vw, 4rem); grid-template-columns: 1fr; }
+  @media (min-width: 56rem) { .quotes { grid-template-columns: 1fr 1fr; } }
+  blockquote { margin: 0; display: flex; flex-direction: column; }
+  blockquote::before { content: "\201C"; font-family: var(--serif); font-size: 5rem; line-height: .6; color: var(--gold); height: 2.2rem; }
+  blockquote p { font-family: var(--serif); font-size: 1.2rem; line-height: 1.55; margin: 0 0 1.75rem; }
+  blockquote footer { border-top: 1px solid var(--rule); padding-top: 1rem; margin-top: auto; }
+  blockquote cite { font-style: normal; font-weight: 600; display: block; }
+  blockquote footer span { color: var(--muted); font-size: .95rem; }
+
+  /* Work */
+  .work { background: var(--card); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .groups { display: grid; grid-template-columns: 1fr; gap: 3rem; }
+  @media (min-width: 56rem) { .groups { grid-template-columns: 1fr 1fr; gap: 4.5rem; } }
+  h3 { font-family: var(--serif); font-weight: 400; font-style: italic; font-size: 1.5rem; margin: 0 0 1rem; color: var(--gold); }
+  .pieces { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+  .pieces li { border-bottom: 1px solid var(--rule); padding: 1.15rem 0; }
+  .pieces b { display: block; font-family: var(--serif); font-weight: 500; font-size: 1.25rem; line-height: 1.3; }
+  .pieces span { color: var(--muted); font-size: .975rem; }
+  .more { margin-top: 3rem; color: var(--muted); }
+  .more a { color: var(--ink); text-decoration-color: var(--gold); text-underline-offset: 3px; }
+
+  /* Experience */
+  .jobs { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+  .jobs > li { display: grid; grid-template-columns: 1fr; gap: .35rem 3rem; padding: 2rem 0; border-bottom: 1px solid var(--rule); }
+  @media (min-width: 56rem) { .jobs > li { grid-template-columns: 15rem 1fr; } }
+  .when { color: var(--muted); font-size: .95rem; font-variant-numeric: tabular-nums; padding-top: .3rem; }
+  .jobs h3 { color: var(--ink); font-style: normal; font-size: 1.5rem; margin: 0; }
+  .jobs .org { color: var(--muted); margin: .15rem 0 .9rem; }
+  .jobs ul { margin: 0; padding-left: 1.1rem; max-width: 62ch; }
+  .jobs ul li { margin-bottom: .45rem; }
+  .jobs ul li::marker { color: var(--gold); }
+  .edu { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 3.5rem; }
+  @media (min-width: 56rem) { .edu { grid-template-columns: 15rem 1fr 1fr; gap: 3rem; } }
+  .edu h3 { margin: 0; color: var(--ink); font-style: normal; font-size: 1.5rem; }
+  .edu p { margin: 0; }
+  .edu p b { display: block; font-family: var(--serif); font-weight: 500; font-size: 1.2rem; }
+  .edu p span { color: var(--muted); }
+
+  /* Results */
+  .results { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 0; border-top: 1px solid var(--gold); border-bottom: 1px solid var(--rule); margin: 0 0 3.5rem; }
+  .results div { padding: 1.4rem 1.5rem 1.4rem 0; }
+  .results b { display: block; font-family: var(--serif); font-weight: 400; font-size: clamp(2rem, 4vw, 2.75rem); line-height: 1.1; }
+  .results span { color: var(--muted); font-size: .95rem; }
+
+  /* Contact */
+  .contact { background: var(--navy); color: var(--on-navy); }
+  .contact h2 { max-width: 16ch; }
+  .contact .email { font-family: var(--serif); font-size: clamp(1.5rem, 4.6vw, 3rem); text-decoration: none; border-bottom: 1px solid var(--gold); padding-bottom: .1em; overflow-wrap: anywhere; }
+  .contact .email:hover { color: var(--gold); }
+  .contact p { color: var(--on-navy-muted); max-width: 44ch; margin: 2rem 0 0; }
+  .site-foot { background: var(--navy); color: var(--on-navy-muted); font-size: .875rem; padding-bottom: 2.5rem; }
+  .site-foot .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; border-top: 1px solid rgba(255,255,255,.14); padding-top: 1.5rem; }
+  .site-foot a { text-decoration: none; }
+  .site-foot a:hover { color: var(--on-navy); }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <svg class="court" viewBox="0 0 940 500" aria-hidden="true">
+      <rect x="20" y="20" width="900" height="460"/>
+      <line x1="470" y1="20" x2="470" y2="480"/>
+      <circle cx="470" cy="250" r="60"/>
+      <rect x="730" y="170" width="190" height="160"/>
+      <path d="M730 190 A60 60 0 0 0 730 310"/>
+      <path d="M920 50 L860 50 A230 200 0 0 0 860 450 L920 450"/>
+      <circle cx="880" cy="250" r="9"/>
+      <line x1="896" y1="220" x2="896" y2="280"/>
+    </svg>
+    <div class="wrap">
+      <header class="top">
+        <a class="mark" href="#">N. Crawford</a>
+        <nav aria-label="Main">
+          <a href="#experience">Experience</a>
+          <a href="#players">Players</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+      <div class="hero-body">
+        <h1>Nash<span>Crawford</span></h1>
+        <p class="role"><strong>Graduate assistant coach and social media manager</strong>, Howard Payne University men's basketball</p>
+        <div class="mission">
+          <p>I am a relationship-driven coach committed to developing student-athletes through intentional skill work, clear communication, and a competitive, growth-focused environment. I strive to elevate every program I serve through professionalism, energy, and a team-first approach that builds confidence and character.</p>
+        </div>
+        <div class="actions">
+          <a class="btn solid" href="mailto:nash.crawford12@gmail.com">Email me</a>
+          <a class="btn ghost" href="#work">See my work</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/nash-crawford/">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <p class="sub">College and high school basketball, from player development and recruiting to film and content.</p>
+      <ol class="jobs" reversed>
+        <li>
+          <div class="when">Aug 2025 to present</div>
+          <div>
+            <h3>Graduate Assistant Coach</h3>
+            <p class="org">Howard Payne University men's basketball, Brownwood, Texas</p>
+            <ul>
+              <li>Run the team's Instagram account, growing it by 700 followers and launching collaborations with every athletic program.</li>
+              <li>Design and lead 30 to 45 minute player development groups, including guard and wing shooting and post finishing and footwork.</li>
+              <li>Support recruiting through player evaluation, on-campus prospect camps, and in-person visits with players and families.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">Aug 2026 to present</div>
+          <div>
+            <h3>Operations Intern</h3>
+            <p class="org">Elite Basketball Services, remote</p>
+            <ul>
+              <li>Cover high school, prep, junior college, and international basketball for a national scouting and events company that runs The Hoop Exchange and the All-American JUCO Showcase.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">Aug 2024 to Jul 2025</div>
+          <div>
+            <h3>Head JV and Varsity Assistant Coach</h3>
+            <p class="org">Jesuit College Preparatory School of Dallas</p>
+            <ul>
+              <li>Broke down film and produced highlight clips for scouting preparation.</li>
+              <li>Designed practice plans and drill series for off-season and in-season development.</li>
+              <li>Taught a weekly Social Justice and Public Policy section and helped lead class retreats.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="when">Aug 2022 to Jun 2024</div>
+          <div>
+            <h3>Student Assistant</h3>
+            <p class="org">Texas Tech Lady Raider Basketball, Lubbock, Texas</p>
+            <ul>
+              <li>Ran practice operations and pre-practice warm-ups, and supported recruiting visits.</li>
+              <li>Created graphics and digital content for recruiting and communications.</li>
+              <li>Helped run the 2023–24 media day with Texas Tech Media staff.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+      <div class="edu">
+        <h3>Education</h3>
+        <p><b>Master of Science, Sports and Wellness Leadership</b><span>Howard Payne University</span></p>
+        <p><b>Bachelor of Science, Sports Management</b><span>Texas Tech University, minor in Media Studies</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="players">
+    <div class="wrap">
+      <h2>From my players</h2>
+      <p class="sub">The best measure of a coach is what the people he coaches say about him.</p>
+      <div class="quotes">
+        <blockquote>
+          <p>He kept us humble, he gave us everything he had, countless hours, sleepless nights, everything he could do to get us better. I developed a more personal relationship with him on and off the court, and he kept everything real, which, once again, kept me humble. Anyone would be lucky to have a Coach Crawford in their organization. Prioritizing players over himself should tell you what kind of man he is.</p>
+          <footer><cite>Armonie Ramey</cite><span>Two-time ASC Defensive Player of the Year, top 8 all-time points leader at Howard Payne</span></footer>
+        </blockquote>
+        <blockquote>
+          <p>Over the past year, I've gotten to know Coach Crawford as not only a coach but also a friend and mentor. He is one of the main reasons I want to pursue coaching. Coach Crawford shows the most passion I've ever seen, and his love for the game is unprecedented. I know if I ever needed anything, Coach would be there, and I have nothing but respect for him. He has truly been one of the best coaches I've ever had.</p>
+          <footer><cite>Ben Phillip</cite><span>All-ASC Second Team, All-ASC Honorable Mention, ASC points-per-game leader (2025–26)</span></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="work">
+    <div class="wrap">
+      <h2>Social media work</h2>
+      <p class="sub">Graphics, video, and community content I've created for the Howard Payne Yellow Jackets, plus media days for HPU beach volleyball and softball.</p>
+      <div class="results">
+        <div><b>220,000+</b><span>Instagram profile views</span></div>
+        <div><b>86%</b><span>of views from people who didn't follow yet</span></div>
+        <div><b>5,000</b><span>unique accounts interacting</span></div>
+        <div><b>+700</b><span>new followers since taking over</span></div>
+      </div>
+      <div class="groups">
+        <div>
+          <h3>Graphics</h3>
+          <ul class="pieces">
+            <li><b>Senior Night trading card</b><span>A collectible-style card honoring Ben Phillip's senior season, 2025–26.</span></li>
+            <li><b>Dallas Huston Classic</b><span>Tournament branding and a photo tribute for the 2025–26 event.</span></li>
+            <li><b>Armonie Ramey, 1,500 career points</b><span>A milestone graphic celebrating a program record.</span></li>
+            <li><b>National ranking</b><span>Spotlighting Armonie Ramey's national standing in scoring and steals.</span></li>
+            <li><b>ASC Player of the Week</b><span>Award announcement for Ben Phillip.</span></li>
+            <li><b>Bevo Francis Award nomination</b><span>Announcing Armonie Ramey's small-college national award nomination.</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Video and community</h3>
+          <ul class="pieces">
+            <li><b>Sleep in Heavenly Peace bed build</b><span>Covering the team's service day building beds for children in Brownwood.</span></li>
+            <li><b>Jacket Madness 3-point contest</b><span>Season-opener event coverage featuring Ben Phillip.</span></li>
+            <li><b>What's the Vibe: Halloween edition</b><span>A recurring player-personality series for fans.</span></li>
+            <li><b>Community ticket engagement</b><span>Taking the team into local businesses to build game-day turnout.</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="more">See the full feed on Instagram at <a href="https://instagram.com/hpu_mbsk">@hpu_mbsk</a>. Vype content on that account isn't my work.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Let's build something together.</h2>
+      <a class="email" href="mailto:nash.crawford12@gmail.com">nash.crawford12@gmail.com</a>
+      <p>Whether it's a coaching role or a program that needs a stronger online presence, I'd love to hear from you. My full resume and references are available on request.</p>
+    </div>
+  </section>
+  <footer class="site-foot">
+    <div class="wrap">
+      <span>© 2026 Nash Crawford</span>
+      <span><a href="https://www.linkedin.com/in/nash-crawford/">LinkedIn</a>&nbsp;&nbsp;&nbsp;<a href="https://x.com/nashcrawfordHPU">X</a>&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/nashcrawfordhpu/">Instagram</a></span>
+    </div>
+  </footer>
+</body>
+</html>
